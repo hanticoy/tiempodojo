@@ -4,6 +4,16 @@ function descartaMsg() {
     elem.innerHTML="";
 }
 
+function moverAlerta(){
+    console.log('hola');
+    let elem = document.querySelector("#alertCookie");
+    // elem.style.position="absolute";
+    elem.style.position = "fixed"
+    elem.style.top ='500px'
+    elem.style.left ='5px'
+   
+
+}
 function cambiarTemperatura(tipoTemp) {
     let temp = document.querySelectorAll("#temMinId");
     let valor=0;
