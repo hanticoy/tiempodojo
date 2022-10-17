@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Likes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <h1 class="nav-title">DojoWeather</h1>
+                <div class="nav-links">
+                    <a onclick="window.alert('Cargando informe meteorológico!!');cambiarMeteorologia()">Burbank</a>
+                    <a>Chicago</a>
+                    <a>Dallas</a>
+                </div>
+            </nav>
+        </header>
+        <article class="detail">
+            <section class="detail-left">
+                <article class="content1">
+                    <h1>San Jose</h1>
+                    <span class="span_horizontal">
+                        <h6>show temperature in</h6>
+                        <select name="tempcmb" onchange="cambiarTemperatura(this.value)">
+                            <option value="C">°C</option>
+                            <option value="F">°F</option>
+                        </select>
+                    </span>
+                </article>
+            </section>
+            <section class="detail-center">
+                <article class="content2">
+                            <section class="timeDayFrame">
+                                <article class="timeDay">
+                                    <p><b>Today</b></p>
+                                    <br>
+                                    <p><img class="imgweather" src="img/some_rain.png" alt=""></p>
+                                    <p>some rain</p>
+                                    <br><br>
+                                    <div class="variaTemp">
+                                        <p class="temMax"  id="temMaxId"><b>75°</b></p>
+                                        <p class="temMin" id="temMinId"><b>65°</b></p>
+                                    </div>
+                                    <br>
+                                </article>
+                            </section>
+                            <section class="timeDayFrame">
+                                <article class="timeDay">
+                                    <p><b>Tomorrow</b></p>
+                                    <br>
+                                    <p><img class="imgweather" src="img/some_sun.png" alt=""></p>
+                                    <p>some sun</p>
+                                    <br><br>
+                                    <div class="variaTemp">
+                                        <p class="temMax"><b>80°</b></p>
+                                        <p class="temMin" id="temMinId"><b>66°</b></p>
+                                    </div>
+                                    <br>
+                                </article>
+                            </section>
+                            <section class="timeDayFrame">
+                                <article class="timeDay">
+                                    <p><b>Friday</b></p>
+                                    <br>
+                                    <p><img class="imgweather" src="img/some_clouds.png" alt=""></p>
+                                    <p>some clouds</p>
+                                    <br><br>
+                                    <div class="variaTemp">
+                                        <p class="temMax"><b>69°</b></p>
+                                        <p class="temMin" id="temMinId"><b>61°</b></p>
+                                    </div>
+                                    <br>
+                                </article>
+                            </section>
+                            <section class="timeDayFrame">
+                                <article class="timeDay">
+                                    <p><b>Saturday</b></p>
+                                    <br>
+                                    <p><img class="imgweather" src="img/some_sun.png" alt=""></p>
+                                    <p>some sun</p>
+                                    <br><br>
+                                    <div class="variaTemp">
+                                        <p class="temMax"><b>78°</b></p>
+                                        <p class="temMin" id="temMinId"><b>70°</b></p>
+                                    </div>
+                                    <br>
+                                </article>
+                            </section>
+                </article>
+            </section>
+            <section class="detail-right" id="alertCookie">
+                <article class="content3">
+                    <p><img class="imgweather" src="img/cookie.png" alt=""></p>
+                    <p>
+                        <b>Stop! Cookie time</b><br>
+                        We use cookies (sadly not the editable ones) to personalize content and ads, to provide social media features and to analyse our traffic. <u>Read more..</u>   
+                    </p>
+                    <p><button class="btn-accept" onclick="descartaMsg()">I Accept</button></p>
+                </article>
+            </section>
+        </article>
+        <footer>//</footer>
+    </main>
+</body>
+
+</html>
